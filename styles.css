@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: lightcyan;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.container {
+  border: 2px solid red;
+  width: 800px;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: skyblue;
+}
+
+.render-quotes {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.typeQuote {
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 8rem;
+  margin: auto;
+  resize: none;
+  padding: 0.5rem 1rem;
+  /* border:2px solid #333; */
+}
+
+.type-quote:focus {
+  border-color: none;
+}
+
+.correct {
+  color: green;
+}
+
+.wrong {
+  color: red;
+  text-decoration: underline;
+}
+
+.game {
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  border: #333 2px solid;
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+.show-time {
+  padding: 20px;
+  background-color: rgb(194, 235, 194);
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.next-quote {
+  padding: 10px;
+  background-color: rgb(5, 5, 191);
+  color: beige;
+  border-radius: 4px;
+  border:none;
+}
