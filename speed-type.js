@@ -1,4 +1,5 @@
-const RANDOM_QUOTE_API_URL = "http://api.quotable.io/random";
+// const RANDOM_QUOTE_API_URL = "http://api.quotable.io/random";
+const PROXY_FUNCTION_URL = "/.netlify/functions/proxy";
 const container = document.getElementById("container");
 const renderQuotesContainer = document.getElementById("renderQuotes");
 const typeQuoteContainer = document.getElementById("typeQuote");
@@ -67,7 +68,7 @@ nextQuoteButton.addEventListener("click", () => {
 // ************ Function to fetch a random quote ************
 
 async function fetchRandomQuote() {
-  const response = await fetch(RANDOM_QUOTE_API_URL);
+  const response = await fetch(PROXY_FUNCTION_URL);
   const data = await response.json();
   console.log("data", data);
   return data.content;
